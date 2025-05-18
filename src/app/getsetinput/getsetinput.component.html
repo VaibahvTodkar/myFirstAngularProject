@@ -1,0 +1,19 @@
+<h1>Get and Set Input Value</h1>
+<p>getsetinput works!</p>
+
+<input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter your UserName">
+<br>
+<br>
+<h1>UserName value : {{displayName}}</h1>
+<br>
+<button (click)="showName()">Get Input</button>
+<button (click)="SetName()">Set Input</button>
+
+<hr>
+<h1>Using Template Refrence Variable</h1>
+<input type="email" value="{{email}}" placeholder="Enter your Email" #emailField>
+<br><br>
+<button (click)="getEmail(emailField.value)">Get Email</button> 
+<button (click)="setEmail()">Set Email</button>
+
+<h1>User Email : {{email}}</h1>

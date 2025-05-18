@@ -4,10 +4,11 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from "./signup/signup.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { GetsetinputComponent } from './getsetinput/getsetinput.component';
+import { ForloopComponent } from "./forloop/forloop.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, SignupComponent, ProfileComponent, GetsetinputComponent],
+  imports: [RouterOutlet, LoginComponent, SignupComponent, ProfileComponent, GetsetinputComponent, ForloopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

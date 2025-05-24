@@ -11,5 +11,14 @@
         <span>{{student.name}}</span>
         <span>{{student.age}}</span>
         <span>{{student.email}}</span>
-    </h2>
+        <button (click)="getName(student.name)"></button>
+    </h2>  
+}
+
+<h1>For Loop contextual Variale</h1>
+<h3 style="color: red;">Count First last id user</h3>
+@for(user of users; track user; let id=$index){
+    <h3>
+        {{$count}} {{$first}} {{$last}} {{id+1}} {{user}}
+    </h3>
 }

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './forloop.component.css'
 })
 export class ForloopComponent {
-  users=["Vaibhav", "Sham", "Ram","Pinkey", "Chinkey"]
+  users=["Vaibhav", "Sham", "Ram","Pinkey", "Chinkey", "Pravin", "Vinay", "TOny"]
 
   students = [
     {name:"Vaibhav", age:23, email:"vaibhav@gmail.com"},
@@ -16,4 +16,7 @@ export class ForloopComponent {
     {name:"Ram", age:23, email:"Ram@gmail.com"},
     {name:"Chinkey", age:23, email:"Chinkey@gmail.com"}
   ]
+  getName(name:string){
+    console.log(name)
+  }
 }

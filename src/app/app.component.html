@@ -1,15 +1,37 @@
 <h1>This is my first application Angular</h1>
-
+<hr>
+<h1>Routing in Angular</h1>
+<ul>
+    <li>
+        <a routerLink="/login">Login</a>
+    </li>
+    <li>
+        <a routerLink="/about">About</a>
+    </li>
+    <li>
+        <a routerLink="/contact">contact</a>
+    </li>
+</ul>
+<router-outlet/> 
+<hr>
+<app-directives></app-directives>
+<hr>
+<app-twowaybinding></app-twowaybinding>
+<hr>
 <p>Function Event</p>
 <button (click)="functionClicked()">Click Me</button>
   
 <h2>{{name}}</h2>
 <h2>{{title}}</h2>
-<app-login></app-login> 
+<hr>
+<app-login></app-login>
+<hr> 
 <app-signup>app-login</app-signup>
+<hr>
 <app-profile></app-profile>
-
+<hr>
 <app-getsetinput></app-getsetinput>
 
 <hr>
 <app-forloop></app-forloop>
+<hr>
